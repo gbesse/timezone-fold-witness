@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "timezone-fold-witness"
+version = "0.1.0a1"
+description = "FR: Trouver les heures locales inexistantes ou présentes deux fois | EN: Find local times that do not exist or occur twice | ES: Encontrar horas locales inexistentes o repetidas dos veces"
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+timezone-fold-witness = "timezone_fold_witness.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["timezone_fold_witness*"]
